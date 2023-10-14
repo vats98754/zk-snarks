@@ -1,12 +1,10 @@
+template Multiplier() {
+    signal private input a;
+    signal private input b;
+    signal output c;
 
-template ECScalarMul() {
-    signal public input Px;
-    signal public input Py;
-    signal private input k;
-    signal public input Qx;
-    signal public input Qy;
-
-    // ... elliptic curve operations ...
+    // Constraint that c = a * b
+    c <== a * b;
 }
 
-component main = ECScalarMul();
+component main = Multiplier();
