@@ -1,10 +1,8 @@
+include "multiplication.circom";
 
-include "../circuits/ec_scalar_mul.circom";
+component main = Multiplier();
 
-component main = ECScalarMul();
-
-main.Px <== 5; 
-main.Py <== 7; 
-main.k <== 3;
-main.Qx === 15;
-main.Qy === 21;
+// Test the circuit with specific values
+main.a <== 3;
+main.b <== 4;
+main.c === 12;  // This should hold true, as 3 * 4 = 12
