@@ -1,5 +1,5 @@
 
-# zk-SNARK Projects
+# zk-SNARK Circuits
 
 A compilation of projects showcasing the power and versatility of zk-SNARKs in various applications.
 
